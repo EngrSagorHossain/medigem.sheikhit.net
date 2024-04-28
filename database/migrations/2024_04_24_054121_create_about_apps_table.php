@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('about_us');
             $table->string('medical_college');
             $table->string('some_question');
-         
             $table->timestamps();
         });
     }

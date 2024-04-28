@@ -23,6 +23,10 @@ class ExamList extends Model
     {
         return $this->HasMany(ExamHistorie::class,'exam_list_id');
     }
-
-
+    protected $fillable = [
+        'sub_cat_id', // Add sub_cat_id to the fillable attributes
+        'title',
+        'image',
+        'exam_date',
+    ];
 }

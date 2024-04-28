@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('sub_cat_id')->constrained('sub_categories');
             $table->string('title');
             $table->string('image');
+            $table->string('exam_date');
             $table->timestamps();
         });
     }
