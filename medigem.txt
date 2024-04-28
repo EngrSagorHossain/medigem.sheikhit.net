@@ -1,0 +1,31 @@
+ register api
+post  = http://127.0.0.1:8000/api/register
+Fileds = full_name,email,password,phone_number 
+
+
+
+Login api
+post  = http://127.0.0.1:8000/api/login
+Fileds = email,password
+
+
+ profile update api
+post  = http://127.0.0.1:8000/api/profile-update
+Fileds = full_name,email,password,phone_number,profile_image,  => all nullable <=
+
+
+
+get package id to categoris
+get = http://127.0.0.1:8000/api/pack-id-category/1
+
+
+get category id to subcategory 
+get = http://127.0.0.1:8000/api/category-id-subcategory/1
+
+
+get Subcategory id to Examlist 
+get = http://127.0.0.1:8000/api/subcategory-id-exam/1
+
+
+get Examlist id to Mcq 
+get = http://127.0.0.1:8000/api/exam-id-mcq/1
